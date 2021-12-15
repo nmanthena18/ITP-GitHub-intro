@@ -25,4 +25,4 @@ jobs:
       run: docker build . --file Dockerfile --tag nmanthena/nmanthena:$(date +%s)
       
     - name: Docker Push
-      run: docker push nmanthena/nmanthena
+      run: docker push nmanthena/nmanthena:$(date +%s)
